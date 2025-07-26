@@ -3,7 +3,7 @@
 ## Overview
 
 This project implements a **Network Intrusion Detection System (NIDS)** leveraging machine learning techniques on network traffic data. It uses the popular **NSL-KDD** dataset to train a Random Forest classifier that can detect attacks based on network traffic features.  
-Additionally, it can analyze real network captures (.pcapng files) to detect potential intrusions in live traffic.
+Additionally, it can analyze real network captures (`.pcapng` files) to detect potential intrusions in live traffic.
 
 ---
 
@@ -11,7 +11,7 @@ Additionally, it can analyze real network captures (.pcapng files) to detect pot
 
 - Train a Random Forest model on NSL-KDD dataset  
 - Predict intrusion on new network flow data via CLI  
-- Extract features from .pcapng files (Wireshark captures) and detect attacks  
+- Extract features from `.pcapng` files (Wireshark captures) and detect attacks  
 - Scalable and extensible with saved models and preprocessors  
 - Useful for cybersecurity and machine learning learning paths  
 
@@ -40,15 +40,17 @@ To test the model on real network traffic:
 ## Installation
 
 1. Clone the repository:
-    
-    bash
-        git clone https://github.com/nihalshetty14/nids-ml.git
-        cd nids-ml
+
+```bash
+git clone https://github.com/nihalshetty14/Network-Intrusion-Detection-System-NIDS-using-Machine-Learning.git
+cd Network-Intrusion-Detection-System-NIDS-using-Machine-Learning
+```
 
 2. Install dependencies:
-    
-    bash
-        pip install -r requirements.txt
+
+```bash
+pip install -r requirements.txt
+```
 
 3. Download and place dataset files as described above.
 
@@ -60,15 +62,17 @@ To test the model on real network traffic:
 
 Run the training script to train the model and save the preprocessing objects:
 
-    bash
-        python src/train_model.py
+```bash
+python src/train_model.py
+```
 
 ### 2. Predict via CLI
 
 Use the CLI interface to predict intrusion from manual input of 41 features:
 
-    bash
-        python cli.py
+```bash
+python cli.py
+```
 
 Enter 41 comma-separated feature values as prompted (categorical fields like `protocol_type`, `service`, and `flag` should be the original string labels).
 
@@ -76,8 +80,9 @@ Enter 41 comma-separated feature values as prompted (categorical fields like `pr
 
 Use a network capture file to extract features and detect attacks:
 
-    bash
-        python src/predict_from_pcap.py
+```bash
+python src/predict_from_pcap.py
+```
 
 Make sure `capture.pcapng` is present in the project root.
 
@@ -85,28 +90,30 @@ Make sure `capture.pcapng` is present in the project root.
 
 ## Project Structure
 
-    nids-ml/
-    │
-    ├── data/
-    │   ├── KDDTrain+.txt
-    │   ├── KDDTest+.txt
-    │
-    ├── models/
-    │   ├── nids_model.pkl
-    │   ├── encoder_protocol.pkl
-    │   ├── encoder_service.pkl
-    │   ├── encoder_flag.pkl
-    │   ├── scaler.pkl
-    │
-    ├── src/
-    │   ├── preprocess.py
-    │   ├── train_model.py
-    │   ├── predict_from_pcap.py
-    │
-    ├── cli.py
-    ├── capture.pcapng        # Optional: your Wireshark capture file
-    ├── README.md
-    ├── requirements.txt
+```
+Network-Intrusion-Detection-System-NIDS-using-Machine-Learning/
+│
+├── data/
+│   ├── KDDTrain+.txt
+│   ├── KDDTest+.txt
+│
+├── models/
+│   ├── nids_model.pkl
+│   ├── encoder_protocol.pkl
+│   ├── encoder_service.pkl
+│   ├── encoder_flag.pkl
+│   ├── scaler.pkl
+│
+├── src/
+│   ├── preprocess.py
+│   ├── train_model.py
+│   ├── predict_from_pcap.py
+│
+├── cli.py
+├── capture.pcapng        # Optional: your Wireshark capture file
+├── README.md
+├── requirements.txt
+```
 
 ---
 
@@ -119,9 +126,13 @@ Dataset license: NSL-KDD Dataset License
 
 ## Contact
 
-Created by Nihal Shetty  
-Email: nihalshetty.0814@gmail.com  
-GitHub: [nihalshetty14](https://github.com/nihalshetty14)
+Created by **Nihal Shetty**  
+📧 Email: nihalshetty.0814@gmail.com  
+🔗 GitHub: [nihalshetty14](https://github.com/nihalshetty14)  
 
-Feel free to reach out with questions or feedback!  
-Happy hacking 🔐🚀
+📂 Repository: [Network-Intrusion-Detection-System-NIDS-using-Machine-Learning](https://github.com/nihalshetty14/Network-Intrusion-Detection-System-NIDS-using-Machine-Learning.git)
+
+---
+
+💡 **Feel free to reach out with questions or feedback!**  
+🔥 Happy hacking 🔐🚀
