@@ -1,0 +1,4 @@
+This project uses the NSL-KDD dataset for training and testing the intrusion detection model.
+
+Note: Dataset files (KDDTrain+.txt, KDDTest+.txt) are not included due to size and licensing constraints.
+Please download the dataset from Kaggle NSL-KDD Dataset and place the files inside the data/ directory.

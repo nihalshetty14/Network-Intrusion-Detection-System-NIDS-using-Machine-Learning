@@ -1,0 +1,7 @@
+To test with your own network data:
+
+Use Wireshark to capture live network traffic.
+
+Save the capture as capture.pcapng in the project root directory.
+
+Important: Avoid sharing .pcap files publicly as they may contain sensitive information.
