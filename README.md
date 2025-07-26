@@ -42,7 +42,7 @@ To test the model on real network traffic:
 1. Clone the repository:
     
     bash
-        git clone https://github.com/nihal-shetty/nids-ml.git
+        git clone https://github.com/nihalshetty14/nids-ml.git
         cd nids-ml
 
 2. Install dependencies:
@@ -120,8 +120,8 @@ Dataset license: NSL-KDD Dataset License
 ## Contact
 
 Created by Nihal Shetty  
-Email: nihal.shetty@example.com  
-GitHub: [nihal-shetty](https://github.com/nihal-shetty)
+Email: nihalshetty.0814@gmail.com  
+GitHub: [nihalshetty14](https://github.com/nihalshetty14)
 
 Feel free to reach out with questions or feedback!  
 Happy hacking 🔐🚀
